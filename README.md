@@ -19,17 +19,20 @@
 1. 克隆或下载项目文件到本地目录
 
 2. 安装Python虚拟环境（推荐）：
+
    ```bash
    python -m venv .venv
    .venv\Scripts\activate  # Windows
    ```
 
 3. 安装依赖包：
+
    ```bash
    pip install -r requirements.txt
    ```
 
    如果没有requirements.txt文件，请手动安装以下包：
+
    ```bash
    pip install ultralytics opencv-python numpy
    ```
@@ -54,7 +57,7 @@ pyinstaller main.spec
 
 ## 项目结构
 
-```
+```text
 AI_Vision_System/
 ├── main.py              # 主程序文件
 ├── main.spec            # PyInstaller配置文件
@@ -69,6 +72,7 @@ AI_Vision_System/
 ## 模型说明
 
 项目使用YOLOv8n（Nano）模型，该模型具有以下特点：
+
 - 体积小（约6MB）
 - 推理速度快
 - 检测精度适中
